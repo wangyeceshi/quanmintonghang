@@ -1,0 +1,232 @@
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 0.75rem 2rem;
+    border: 2px solid #2563eb;
+    background: white;
+    color: #2563eb;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.tab-btn:hover {
+    background: #eff6ff;
+}
+
+.tab-btn.active {
+    background: #2563eb;
+    color: white;
+}
+
+.tutorial-section {
+    display: none;
+}
+
+.tutorial-section.active {
+    display: block;
+}
+
+.tutorial-section h2 {
+    font-size: 2rem;
+    color: #1f2937;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.tutorial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.tutorial-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.tutorial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.tutorial-thumb {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.tutorial-card h3 {
+    font-size: 1.25rem;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.tutorial-card p {
+    color: #6b7280;
+    margin-bottom: 1rem;
+}
+
+.tutorial-meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.tutorial-detail {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e7eb;
+}
+
+.tutorial-detail h4 {
+    font-size: 1rem;
+    color: #2563eb;
+    margin-bottom: 0.5rem;
+}
+
+.tutorial-detail p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.manual-grid {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.manual-card {
+    background: white;
+    border-radius: 12px;
+    padding: 3rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.manual-card h3 {
+    font-size: 2rem;
+    color: #1f2937;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.manual-chapters {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.chapter h4 {
+    font-size: 1.25rem;
+    color: #2563eb;
+    margin-bottom: 1rem;
+}
+
+.chapter ul {
+    list-style: none;
+    padding: 0;
+}
+
+.chapter ul li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #4b5563;
+}
+
+.chapter ul li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #f59e0b;
+    font-weight: bold;
+}
+
+.manual-card .btn {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+@media (max-width: 768px) {
+    .tutorial-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .category-tabs {
+        flex-direction: column;
+    }
+    
+    .tab-btn {
+        width: 100%;
+    }
+}
+
+
+.manual-section {
+    margin-top: 4rem;
+}
+
+.manual-banner {
+    background: linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%);
+    color: white;
+    padding: 3rem;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+}
+
+.manual-icon {
+    font-size: 4rem;
+    flex-shrink: 0;
+}
+
+.manual-info {
+    flex: 1;
+}
+
+.manual-info h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.manual-info p {
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.manual-banner .btn {
+    flex-shrink: 0;
+    background: white;
+    color: #2563eb;
+}
+
+.manual-banner .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .manual-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .manual-banner .btn {
+        width: 100%;
+    }
+}

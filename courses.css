@@ -1,0 +1,130 @@
+.page-hero {
+    background: linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.page-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.page-hero p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+.modules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.module-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.module-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.module-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.module-card h3 {
+    font-size: 1.5rem;
+    color: #2563eb;
+    margin-bottom: 0.5rem;
+}
+
+.module-card p {
+    color: #6b7280;
+    margin-bottom: 1rem;
+}
+
+.module-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.module-card ul li {
+    padding: 0.5rem 0;
+    color: #1f2937;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.module-card ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #f59e0b;
+    font-weight: bold;
+}
+
+.path-timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+.path-step {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 200px;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #2563eb, #0ea5e9);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 1rem;
+}
+
+.path-step h3 {
+    font-size: 1.25rem;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.path-step p {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+.path-arrow {
+    font-size: 2rem;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .path-arrow {
+        transform: rotate(90deg);
+    }
+    
+    .modules-grid {
+        grid-template-columns: 1fr;
+    }
+}

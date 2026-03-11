@@ -1,0 +1,275 @@
+.manual-hero {
+    background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.manual-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.manual-hero p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+.manual-container {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 20px;
+    gap: 2rem;
+}
+
+.manual-sidebar {
+    width: 280px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 80px;
+    height: fit-content;
+}
+
+.manual-nav {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.manual-nav h3 {
+    font-size: 1.25rem;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #2563eb;
+}
+
+.manual-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.manual-nav ul li {
+    margin-bottom: 0.5rem;
+}
+
+.manual-nav ul li a {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    color: #4b5563;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.manual-nav ul li a:hover,
+.manual-nav ul li a.active {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.manual-content {
+    flex: 1;
+    background: white;
+    border-radius: 12px;
+    padding: 3rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.manual-section {
+    margin-bottom: 4rem;
+}
+
+.manual-section h2 {
+    font-size: 2rem;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 3px solid #2563eb;
+}
+
+.manual-section h3 {
+    font-size: 1.5rem;
+    color: #2563eb;
+    margin: 2rem 0 1rem;
+}
+
+.manual-section h4 {
+    font-size: 1.25rem;
+    color: #374151;
+    margin: 1.5rem 0 0.75rem;
+}
+
+.manual-section h5 {
+    font-size: 1.125rem;
+    color: #4b5563;
+    margin: 1rem 0 0.5rem;
+}
+
+.manual-section p {
+    line-height: 1.8;
+    color: #4b5563;
+    margin-bottom: 1rem;
+}
+
+.manual-section ul,
+.manual-section ol {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+.manual-section ul li,
+.manual-section ol li {
+    line-height: 1.8;
+    color: #4b5563;
+    margin-bottom: 0.5rem;
+}
+
+.intro-text {
+    background: #eff6ff;
+    padding: 1rem 1.5rem;
+    border-left: 4px solid #2563eb;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+}
+
+.warning-box {
+    background: #fef3c7;
+    border-left: 4px solid #f59e0b;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+}
+
+.warning-box h4 {
+    color: #92400e;
+    margin-top: 0;
+}
+
+.warning-box p {
+    color: #78350f;
+    margin-bottom: 0.75rem;
+}
+
+.emergency-procedure {
+    background: #fee2e2;
+    border-left: 4px solid #ef4444;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+}
+
+.emergency-procedure h4,
+.emergency-procedure h5 {
+    color: #991b1b;
+}
+
+.emergency-procedure ol {
+    color: #7f1d1d;
+}
+
+.equipment-table,
+.check-list {
+    background: #f9fafb;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.term-list {
+    margin: 1rem 0;
+}
+
+.term-list dt {
+    font-weight: 600;
+    color: #2563eb;
+    margin-top: 1rem;
+}
+
+.term-list dd {
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #4b5563;
+    line-height: 1.8;
+}
+
+.symbol-guide table,
+.tool-table,
+.damage-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+
+.symbol-guide table th,
+.tool-table th,
+.damage-table th {
+    background: #2563eb;
+    color: white;
+    padding: 0.75rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.symbol-guide table td,
+.tool-table td,
+.damage-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+    color: #4b5563;
+}
+
+.symbol-guide table tr:hover,
+.tool-table tr:hover,
+.damage-table tr:hover {
+    background: #f9fafb;
+}
+
+.manual-footer {
+    background: #f9fafb;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.manual-footer p {
+    color: #6b7280;
+    margin: 0.5rem 0;
+}
+
+@media (max-width: 1024px) {
+    .manual-container {
+        flex-direction: column;
+    }
+    
+    .manual-sidebar {
+        width: 100%;
+        position: static;
+    }
+    
+    .manual-content {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .manual-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .manual-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .manual-content {
+        padding: 1.5rem 1rem;
+    }
+    
+    .tool-table,
+    .damage-table {
+        font-size: 0.875rem;
+    }
+}

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教程中心 - 全民通航</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tutorials.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">全民通航</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="courses.html">课程体系</a></li>
+                <li><a href="tutorials.html" class="active">教程中心</a></li>
+                <li><a href="rental.html">设备租赁</a></li>
+                <li><a href="certification.html">辅助考证</a></li>
+                <li><a href="forum.html">交流论坛</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>教程中心</h1>
+            <p>详细的视频教程与操作手册，助您快速掌握无人机技能</p>
+        </div>
+    </section>
+
+    <section class="tutorial-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="safety">安全与法律法规</button>
+                <button class="tab-btn" data-category="structure">结构与组装</button>
+                <button class="tab-btn" data-category="maintenance">调试与维护</button>
+                <button class="tab-btn" data-category="basic">基础知识与飞手体验</button>
+                <button class="tab-btn" data-category="simulator">凤凰模拟器训练</button>
+            </div>
+
+            <div class="tutorial-content">
+                <!-- 一、安全与法律法规模块 -->
+                <div class="tutorial-section active" id="safety">
+                    <h2>一、安全与法律法规模块</h2>
+                    <div class="tutorial-grid">
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">🛡️</div>
+                            <h3>第1课：无人机安全飞行基础规范</h3>
+                            <p>掌握无人机安全飞行的基本要求和操作规范</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 20分钟</span>
+                                <span>📊 必修</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">⚠️</div>
+                            <h3>第2课：室内外飞行安全风险与规避</h3>
+                            <p>识别不同环境下的飞行风险并学习规避方法</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 25分钟</span>
+                                <span>📊 必修</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">🗺️</div>
+                            <h3>第3课：无人机空域管理与报备要求</h3>
+                            <p>了解空域分类、飞行申请和报备流程</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 22分钟</span>
+                                <span>📊 必修</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">📜</div>
+                            <h3>第4课：民用无人机相关法律法规解读</h3>
+                            <p>学习《无人驾驶航空器飞行管理暂行条例》等法规</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 30分钟</span>
+                                <span>📊 必修</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">🚨</div>
+                            <h3>第5课：应急处置与事故预防实操</h3>
+                            <p>掌握常见紧急情况的处置方法和预防措施</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 28分钟</span>
+                                <span>📊 必修</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 二、无人机结构与组装模块 -->
+                <div class="tutorial-section" id="structure">
+                    <h2>二、无人机结构与组装模块</h2>
+                    <div class="tutorial-grid">
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">🔍</div>
+                            <h3>第1课：认识无人机</h3>
+                            <p>机身、桨叶、电机等核心部件详解</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 18分钟</span>
+                                <span>📊 入门级</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">👶</div>
+                            <h3>第2课：少儿款无人机模块化组装(卡扣式)</h3>
+                            <p>卡扣式组装，轻松上手</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 20分钟</span>
+                                <span>📊 入门级</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">🏆</div>
+                            <h3>第3课：竞赛款无人机基础组装与配件安装</h3>
+                            <p>竞赛专用配件的安装与调试</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 30分钟</span>
+                                <span>📊 中级</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">💼</div>
+                            <h3>第4课：职业款无人机传感器接口认知与安装</h3>
+                            <p>专业传感器的识别与安装方法</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 35分钟</span>
+                                <span>📊 高级</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">👴</div>
+                            <h3>第5课：中老年款无人机结构拆解与简易组装</h3>
+                            <p>简化操作，轻松掌握</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 15分钟</span>
+                                <span>📊 入门级</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">🎨</div>
+                            <h3>第6课：无人机外观个性化设计与装饰</h3>
+                            <p>发挥创意，打造专属无人机</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 25分钟</span>
+                                <span>📊 初级</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 三、调试与维护模块 -->
+                <div class="tutorial-section" id="maintenance">
+                    <h2>三、调试与维护模块</h2>
+                    <div class="tutorial-grid">
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">🔋</div>
+                            <h3>第1课：无人机电池保养与充放电规范</h3>
+                            <p>锂电池安全使用与保养方法</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 18分钟</span>
+                                <span>📊 必修</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">⚖️</div>
+                            <h3>第2课：基础姿态校准与定高调试</h3>
+                            <p>飞控姿态校准操作步骤</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 15分钟</span>
+                                <span>📊 初级</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">📡</div>
+                            <h3>第3课：遥控器配对与参数基础调试</h3>
+                            <p>遥控器与飞机的配对与参数设置</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 12分钟</span>
+                                <span>📊 初级</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">🔧</div>
+                            <h3>第4课：常见故障排查(桨叶、电机、信号)</h3>
+                            <p>桨叶、电机、信号故障的诊断与处理</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 25分钟</span>
+                                <span>📊 中级</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">🎯</div>
+                            <h3>第5课：竞赛款无人机对抗配件调试</h3>
+                            <p>竞赛专用配件的调试与优化</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 22分钟</span>
+                                <span>📊 中级</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">📊</div>
+                            <h3>第6课：职业款无人机作业传感器校准</h3>
+                            <p>专业传感器的校准与精度调整</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 30分钟</span>
+                                <span>📊 高级</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 四、基础知识与飞手体验模块 -->
+                <div class="tutorial-section" id="basic">
+                    <h2>四、基础知识与飞手体验模块</h2>
+                    <div class="tutorial-grid">
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">🚀</div>
+                            <h3>第1课：飞手初体验</h3>
+                            <p>无人机起飞与基础操控感知</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 20分钟</span>
+                                <span>📊 入门级</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">🌪️</div>
+                            <h3>第2课：无人机飞行原理与空气动力学基础</h3>
+                            <p>理解升力、推力等基本飞行原理</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 25分钟</span>
+                                <span>📊 初级</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">🛬</div>
+                            <h3>第3课：起飞、降落与对尾悬停基础训练</h3>
+                            <p>掌握起降与悬停的基本操作</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 22分钟</span>
+                                <span>📊 入门级</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">🔄</div>
+                            <h3>第4课：四位悬停与八位悬停实操</h3>
+                            <p>多方位悬停控制训练</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 30分钟</span>
+                                <span>📊 初级</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">🐸</div>
+                            <h3>第5课：精准降落与蛙跳飞行训练</h3>
+                            <p>提升精准控制能力</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 25分钟</span>
+                                <span>📊 初级</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">🛤️</div>
+                            <h3>第6课：直线、圆形、"8"字基础航线飞行</h3>
+                            <p>掌握基础航线飞行技巧</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 28分钟</span>
+                                <span>📊 初级</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">🚧</div>
+                            <h3>第7课：障碍绕飞基础训练(一)</h3>
+                            <p>障碍物识别与基础绕飞</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 25分钟</span>
+                                <span>📊 中级</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">🎯</div>
+                            <h3>第8课：障碍绕飞进阶训练(二)</h3>
+                            <p>复杂障碍环境下的飞行技巧</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 30分钟</span>
+                                <span>📊 中级</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">🏁</div>
+                            <h3>第9课：无障/障碍赛道基础飞行体验</h3>
+                            <p>赛道飞行初体验</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 28分钟</span>
+                                <span>📊 中级</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">✅</div>
+                            <h3>第10课：基础飞行限时考核</h3>
+                            <p>综合考核基础飞行技能</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 35分钟</span>
+                                <span>📊 考核</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 五、凤凰模拟器训练模块 -->
+                <div class="tutorial-section" id="simulator">
+                    <h2>五、凤凰模拟器训练模块</h2>
+                    <div class="tutorial-grid">
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">🎮</div>
+                            <h3>第1课：凤凰模拟器入门与界面操作</h3>
+                            <p>模拟器界面操作与基础设置</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 15分钟</span>
+                                <span>📊 入门级</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">🕹️</div>
+                            <h3>第2课：模拟器单通道飞行训练</h3>
+                            <p>在每个单通道下把飞机停在任意点</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 20分钟</span>
+                                <span>📊 入门级</span>
+                            </div>
+                            <div class="tutorial-detail">
+                                <h4>教具准备</h4>
+                                <p>模拟器、电脑</p>
+                                <h4>学习目标</h4>
+                                <p>能在每个单通道下把飞机停在此通道运动方向上的任何点。以副翼通道为例：将飞机能够很稳定的停留在12345五点上。在俯仰通道上也可以将飞机能够很稳定的停留在图示的12345五点上。</p>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">🎯</div>
+                            <h3>第3课：模拟器双通道飞行训练</h3>
+                            <p>副翼+俯仰通道协同控制训练</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 25分钟</span>
+                                <span>📊 初级</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">↔️</div>
+                            <h3>第4课：模拟器直向/斜向平移飞行</h3>
+                            <p>直向/斜向平移飞行技巧</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 20分钟</span>
+                                <span>📊 初级</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">🔄</div>
+                            <h3>第5课：模拟器四位/八位悬停训练</h3>
+                            <p>多方位悬停控制训练</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 30分钟</span>
+                                <span>📊 中级</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">🛤️</div>
+                            <h3>第6课：模拟器直线、圆形、"8"字航线飞行</h3>
+                            <p>基础航线飞行训练</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 28分钟</span>
+                                <span>📊 中级</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">🚧</div>
+                            <h3>第7课：模拟器障碍绕飞与赛道飞行</h3>
+                            <p>障碍物识别与绕飞技巧</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 30分钟</span>
+                                <span>📊 中级</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">🎈</div>
+                            <h3>第8课：模拟器刺气球对抗训练</h3>
+                            <p>竞赛专项训练</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 25分钟</span>
+                                <span>📊 高级</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">✅</div>
+                            <h3>第9课：模拟器基础飞行综合考核</h3>
+                            <p>综合考核模拟器飞行技能</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 35分钟</span>
+                                <span>📊 考核</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">👓</div>
+                            <h3>第10课：FPV模拟器初体验与界面配置</h3>
+                            <p>第一视角飞行入门</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 20分钟</span>
+                                <span>📊 中级</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">🎯</div>
+                            <h3>第11课：FPV模拟器悬停与降落训练</h3>
+                            <p>FPV视角下的悬停与降落</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 22分钟</span>
+                                <span>📊 中级</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">🏎️</div>
+                            <h3>第12课：FPV模拟器直线/转弯/赛道飞行</h3>
+                            <p>FPV高速飞行技巧</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 28分钟</span>
+                                <span>📊 高级</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">🚪</div>
+                            <h3>第13课：FPV模拟器拱门/天井/日字门穿越</h3>
+                            <p>精准穿越训练</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 30分钟</span>
+                                <span>📊 高级</span>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-card">
+                            <div class="tutorial-thumb">🏁</div>
+                            <h3>第14课：FPV模拟器复合赛道训练</h3>
+                            <p>复杂赛道综合训练</p>
+                            <div class="tutorial-meta">
+                                <span>⏱️ 35分钟</span>
+                                <span>📊 高级</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 维修手册入口 -->
+            <div class="manual-section">
+                <div class="manual-banner">
+                    <div class="manual-icon">📖</div>
+                    <div class="manual-info">
+                        <h3>无人机技术维修说明手册</h3>
+                        <p>完整的维修指南，涵盖安全操作、基础准备、核心部件维修、售后定损等内容</p>
+                    </div>
+                    <a href="maintenance-manual.html" class="btn btn-primary">查看完整手册</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>关于我们</h4>
+                    <p>全民通航致力于推动无人机技术全民普及，为低空经济产业输送高素质人才。</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="courses.html">课程体系</a></li>
+                        <li><a href="rental.html">设备租赁</a></li>
+                        <li><a href="certification.html">职业认证</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系我们</h4>
+                    <p>邮箱: contact@qmth.com</p>
+                    <p>电话: 400-XXX-XXXX</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 全民通航. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="tutorials.js"></script>
+</body>
+</html>
