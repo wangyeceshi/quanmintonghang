@@ -1,94 +1,224 @@
-.page-hero {
-    background: linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%);
-    color: white;
+.course-category {
     padding: 4rem 0;
+}
+
+.course-category.kids {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+}
+
+.course-category.adult {
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+}
+
+.course-category.senior {
+    background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
+}
+
+.category-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.category-badge {
+    display: inline-block;
+    background: white;
+    color: #2563eb;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category-header h2 {
+    font-size: 2.5rem;
+    color: #1f2937;
+    margin-bottom: 0.75rem;
+}
+
+.category-subtitle {
+    font-size: 1.125rem;
+    color: #4b5563;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* 统一卡片样式 - 参考专项实训 */
+.program-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 3rem;
+    overflow: hidden;
+}
+
+.program-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 3rem;
+    align-items: center;
+}
+
+.program-content.reverse {
+    direction: rtl;
+}
+
+.program-content.reverse > * {
+    direction: ltr;
+}
+
+/* 图片容器 */
+.program-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 真实图片样式 */
+.course-img {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* 全宽图片容器 */
+.category-image-full {
+    margin-top: 3rem;
     text-align: center;
 }
 
-.page-hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+.category-image-full .course-img {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.page-hero p {
-    font-size: 1.25rem;
-    opacity: 0.9;
+.program-details h3 {
+    font-size: 1.5rem;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
 }
 
-.modules-grid {
+.course-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.course-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: #f9fafb;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.course-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.course-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.course-item h4 {
+    font-size: 1.125rem;
+    color: #1f2937;
+    margin-bottom: 0.25rem;
+}
+
+.course-item p {
+    color: #6b7280;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* 配套工具区域 */
+.category-features {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 3rem;
+}
+
+.category-features h3 {
+    font-size: 1.75rem;
+    color: #1f2937;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
 }
 
-.module-card {
-    background: white;
-    padding: 2rem;
+.feature-box {
+    text-align: center;
+    padding: 1.5rem;
+    background: #f9fafb;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
 
-.module-card:hover {
+.feature-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-.module-icon {
+.feature-icon {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-.module-card h3 {
-    font-size: 1.5rem;
-    color: #2563eb;
+.feature-box h4 {
+    font-size: 1.125rem;
+    color: #1f2937;
     margin-bottom: 0.5rem;
 }
 
-.module-card p {
+.feature-box p {
     color: #6b7280;
-    margin-bottom: 1rem;
+    font-size: 0.9rem;
 }
 
-.module-card ul {
-    list-style: none;
-    padding: 0;
-}
-
-.module-card ul li {
-    padding: 0.5rem 0;
-    color: #1f2937;
-    position: relative;
-    padding-left: 1.5rem;
-}
-
-.module-card ul li:before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    color: #f59e0b;
-    font-weight: bold;
-}
-
-.path-timeline {
+.learning-path {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
     flex-wrap: wrap;
-    gap: 1rem;
-    padding: 2rem 0;
 }
 
-.path-step {
+.path-stage {
     background: white;
     padding: 2rem;
-    border-radius: 12px;
+    border-radius: 16px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    min-width: 200px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
 }
 
-.step-number {
+.stage-number {
     width: 50px;
     height: 50px;
     background: linear-gradient(135deg, #2563eb, #0ea5e9);
@@ -102,15 +232,38 @@
     margin: 0 auto 1rem;
 }
 
-.path-step h3 {
-    font-size: 1.25rem;
+.path-stage h3 {
+    font-size: 1.5rem;
     color: #1f2937;
-    margin-bottom: 0.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
-.path-step p {
+.stage-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.content-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: #f9fafb;
+    border-radius: 8px;
+}
+
+.item-icon {
+    font-size: 1.5rem;
+}
+
+.stage-desc {
     color: #6b7280;
     font-size: 0.9rem;
+    text-align: center;
+    line-height: 1.6;
 }
 
 .path-arrow {
@@ -119,12 +272,156 @@
     font-weight: bold;
 }
 
-@media (max-width: 768px) {
+.category-image-full {
+    margin-top: 3rem;
+}
+
+.category-image-full .image-placeholder {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.senior-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.feature-highlight {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-icon {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.feature-highlight h3 {
+    font-size: 1.25rem;
+    color: #1f2937;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.feature-highlight ul {
+    list-style: none;
+    padding: 0;
+}
+
+.feature-highlight ul li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #4b5563;
+}
+
+.feature-highlight ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #10b981;
+    font-weight: bold;
+}
+
+.senior-advantage {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.senior-advantage h3 {
+    font-size: 1.75rem;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.senior-advantage p {
+    color: #6b7280;
+    font-size: 1.125rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-section {
+    background: linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%);
+    color: white;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-section p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.cta-buttons .btn-secondary {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.cta-buttons .btn-secondary:hover {
+    background: white;
+    color: #2563eb;
+}
+
+@media (max-width: 1024px) {
+    .program-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .program-content.reverse {
+        direction: ltr;
+    }
+    
+    .learning-path {
+        flex-direction: column;
+    }
+    
     .path-arrow {
         transform: rotate(90deg);
     }
+}
+
+@media (max-width: 768px) {
+    .category-header h2 {
+        font-size: 2rem;
+    }
     
-    .modules-grid {
+    .category-subtitle {
+        font-size: 1rem;
+    }
+    
+    .program-content {
+        padding: 2rem;
+    }
+    
+    .features-grid,
+    .senior-features {
         grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
     }
 }
